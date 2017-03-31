@@ -1,17 +1,400 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Stylesheets go here. -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
-  <link rel="stylesheet" type="text/css" href="global.css" />
-</head>
-<body>
-<h1>test</h1>
-  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
-  <script type="text/javascript" src="global.js"></script>
-</body>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+		<meta property="fb:app_id" content="424426844274364"/>
+
+		<meta property="og:url" content=""/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Annual Report 2016 - Allegion"/>
+
+		<meta property="og:site_name" content="Annual Report 2016 - Allegion"/>
+		<meta property="fb:admins" content="1088490351"/>
+		<meta property="fb:admins" content="11512735"/>
+		<meta property="fb:admins" content="1088490312"/>
+		<meta property="og:description" content="Enter now for your chance to win new Schlage interior door hardware for your entire home along with a $500 Lowe's gift card. Our stylish door hardware installs easily with just a screwdriver."/>
+		<title>Annual Report 2016 - Allegion</title>
+		<style type="text/css">
+			body { border: 0; margin: 0; padding: 0; }
+		</style>
+
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link rel="stylesheet" type="text/css" href="styles/static.css">
+		<link rel="stylesheet" type="text/css" href="styles/global.css">
+
+	</head>
+	<body style="margin:0px;padding:0px;">
+		<div id="cqcanvas">
+			<div id="vsscript_15268_730848">
+			</div>
+			<!-- Place all markup and script imports inside here -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<!-- Allegion Header Template -->
+			<div class="color-wrapper-1 landing heading-blue">
+			   <div class="fixed-area affix">
+			      <div id="iubenda-cs-banner" style="display:none;" class="iubenda-banner">
+			         <div class="iubenda-content">
+			            <div class="iubenda-cs-rationale">
+			               <a class="iubenda-cs-close-btn" href="javascript:void(0)">x</a>
+			               <div class="iubenda-banner-content">
+			                  <p></p>
+			                  <p>Disclamier</p>
+			                  <p>This website uses cookies to distinguish you from other users of our site. This helps us provide you with a good experience when you browse our site, allows us to improve our site, and allows us and our partners to target ads to you. By continuing to browse the site, you are giving consent to use our cookies. To find out more about the cookies we use, including how to block or control certain cookies, please read our&nbsp;<a href="http://www.allegion.com/corp/en/footer/cookies-policy.html">Cookies Policy</a>.</p>
+			                  <p></p>
+			               </div>
+			            </div>
+			         </div>
+			      </div>
+			      <header>
+			         <nav class="header-navigation">
+			            <ul class="navigation-list">
+			               <li class="navigation-item"><a href="/corp/en/header/career-nav.html">Careers</a></li>
+			               <li class="navigation-item"><a href="/corp/en/header/media.html">Media</a></li>
+			               <li class="navigation-item"><a href="/corp/en/header/locations.html">Locations</a></li>
+			               <li class="navigation-item"><a href="/corp/en/header/contact-us.html">Contact Us</a></li>
+			               <!--adding worldwide sites-->
+			               <li class="dropdown navigation-item">
+			                  <a href="#" role="button" id="drop1" class="paddingclass">
+			                  <img src="imgs/corp/allegion-icon-globe-black.png" style="position:absolute;top:0; left:0">
+			                  Worldwide Sites
+			                  <img style="position:absolute;top:10px; left:130px" src="imgs/corp/nav-down-arrow.gif">
+			                  </a>
+			                  <ul class="dropdown-menu" aria-labelledby="drop1" role="menu">
+			                     <li class="liDropDown"><a href="/corp/en/worldwide/USA.html">USA</a></li>
+			                     <li class="liDropDown"><a href="/corp/en/worldwide/EMEIA.html">EMEIA</a></li>
+			                     <li class="liDropDown"><a href="/corp/en/worldwide/Australia.html">Australia</a></li>
+			                     <li class="liDropDown"><a href="/corp/en/worldwide/new_zealand.html">New Zealand</a></li>
+			                     <li class="liDropDown"><a href="/corp/en/worldwide/china.html">China</a></li>
+			                  </ul>
+			               </li>
+			               <!--end-->
+			               <li class="navigation-item has-dropdown">
+			                  NYSE
+			               </li>
+			               <li class="navigation-item has-dropdown">
+			                  ALLE
+			               </li>
+			               <li class="navigation-item has-dropdown">
+			                  <span id="stockprice">75.86</span>
+			               </li>
+			               <li class="navigation-item has-dropdown">
+			                  <span style="font-size: 16px;" id="stockDirection" class="green">⇧</span>&nbsp;&nbsp;<span id="stockChange" class="green">0.45</span>
+			               </li>
+			               <script type="text/javascript">
+			                  $.ajax({
+			                      type: 'POST',
+			                      url: '/bin/allegionCorp2/readStockDetails',
+			                      success: function (msg) {
+			                            var xmlText = msg;
+			                             //alert('xmlText = '+xmlText);
+			                            var xmlDOM = $.parseXML(xmlText);
+			                            var price = $(xmlDOM).find('CurrentPrice').text();
+			                            var change = $(xmlDOM).find('Change').text();
+			                  $('#stockprice').text(price);
+			                            $('#stockChange').text(Math.abs(change));
+			                            if (change > 0) {
+			                                $('#stockDirection').html('&#x21e7;');
+			                                $('#stockDirection').addClass("green");
+			                                $('#stockChange').addClass("green");
+			                            } else {
+			                                $('#stockDirection').html('&#x21e9;');
+			                                $('#stockDirection').addClass("red");
+			                                $('#stockChange').addClass("red");
+			                            }
+
+			                  	},
+			                         error: function (xhr, ajaxOptions, thrownError) {
+			                                //alert('inside error');
+			                  }
+			                  });
+			               </script>
+			            </ul>
+			         </nav>
+			      </header>
+			      <div class="row header-wrapper">
+			         <!-- Logo -->
+			         <div class="col-xs-9 col-sm-6 logo">
+			            <a href="/corp/en/index.html"><img title="allegion-logo" alt="allegion-logo" class="cq-dd-image" src="imgs/corp/Allegion-Logo.png"></a>
+			         </div>
+			         <div id="search_box" class="col-xs-9 col-sm-6 search">
+			            <form name="searchform" action="/corp/en/search.html" method="get">
+			               <input name="q" id="searchInput" onfocus="this.value=''" type="text" size="20" value="Search Allegion.com" title="Search Allegion.com"> <input title="Search" type="submit" value="Search" class="search_btn" id="searchClick" disabled="true">
+			            </form>
+			            <script>
+			               $('#searchInput').keyup(function() {
+			               	var empty = false;
+
+			               	if ($.trim($(this).val()) == '') {
+			               		empty = true;
+			               	}
+			               	if (empty) {
+			               		$('#searchClick').attr('disabled', true);
+			               	} else {
+			               		$('#searchClick').attr('disabled', false);
+			               	}
+			               });
+			            </script>
+			         </div>
+			         <!-- Main Navigation - mobile -->
+			         <div class="col-xs-3 col-sm-6 hamburger">
+			            <a class="mobile-toggle" data-toggle="collapse" href="#accordion" data-parent="#accordion" aria-controls="#accordion" aria-expanded="true">Menu</a>
+			            <div class="collapse" id="accordion" aria-multiselectable="true" style="max-height: 773px;">
+			               <div class="panel">
+			                  <div class="panel-heading" role="tab" id="heading1">
+			                     <div class="panel-direct-link">
+			                        <a href="/corp/en/about.html">▸</a>
+			                     </div>
+			                     <div class="panel-title">
+			                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="#collapse1">
+			                        About Allegion
+			                        </a>
+			                     </div>
+			                  </div>
+			                  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+			                     <div class="panel-body">
+			                        <ul class="list-group">
+			                           <li class="list-group-item"><a href="/corp/en/about/our-story.html">Our Story</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/about/corporate-governance.html">Corporate Governance</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/about/leadership.html">Leadership</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/about/expertise.html">Expertise</a></li>
+			                        </ul>
+			                     </div>
+			                  </div>
+			               </div>
+			               <div class="panel">
+			                  <div class="panel-heading" role="tab" id="heading2">
+			                     <div class="panel-direct-link">
+			                        <a href="/corp/en/products.html">▸</a>
+			                     </div>
+			                     <div class="panel-title">
+			                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="#collapse2">
+			                        Products
+			                        </a>
+			                     </div>
+			                  </div>
+			                  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+			                     <div class="panel-body">
+			                        <ul class="list-group">
+			                           <li class="list-group-item"><a href="/corp/en/products/business.html">For Business</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/products/home.html">For Home</a></li>
+			                        </ul>
+			                     </div>
+			                  </div>
+			               </div>
+			               <div class="panel">
+			                  <div class="panel-heading" role="tab" id="heading3">
+			                     <div class="panel-direct-link">
+			                        <a href="/corp/en/brands.html">▸</a>
+			                     </div>
+			                     <div class="panel-title">
+			                        <a href="/corp/en/brands.html" class="collapsed">
+			                        Brands
+			                        </a>
+			                     </div>
+			                  </div>
+			               </div>
+			               <div class="panel">
+			                  <div class="panel-heading" role="tab" id="heading4">
+			                     <div class="panel-direct-link">
+			                        <a href="/corp/en/careers.html">▸</a>
+			                     </div>
+			                     <div class="panel-title">
+			                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="#collapse4">
+			                        Careers
+			                        </a>
+			                     </div>
+			                  </div>
+			                  <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+			                     <div class="panel-body">
+			                        <ul class="list-group">
+			                           <li class="list-group-item"><a href="/corp/en/careers/culture.html">Our Culture</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/careers/people.html">Our People</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/careers/university.html">During and After University</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/careers/equal-opportunity.html">Equal Opportunity Employer</a></li>
+			                        </ul>
+			                     </div>
+			                  </div>
+			               </div>
+			               <div class="panel">
+			                  <div class="panel-heading" role="tab" id="heading5">
+			                     <div class="panel-direct-link">
+			                        <a href="/corp/en/investor-relations.html">▸</a>
+			                     </div>
+			                     <div class="panel-title">
+			                        <a href="/corp/en/investor-relations.html" class="collapsed">
+			                        Investor Relations
+			                        </a>
+			                     </div>
+			                  </div>
+			               </div>
+			               <div class="panel">
+			                  <div class="panel-heading" role="tab" id="heading6">
+			                     <div class="panel-direct-link">
+			                        <a href="/corp/en/news-landing-page.html">▸</a>
+			                     </div>
+			                     <div class="panel-title">
+			                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="#collapse6">
+			                        Newsroom
+			                        </a>
+			                     </div>
+			                  </div>
+			                  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+			                     <div class="panel-body">
+			                        <ul class="list-group">
+			                           <li class="list-group-item"><a href="/corp/en/news-landing-page/media.html">Media Resources</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/news-landing-page/social-media.html">Social Media</a></li>
+			                           <li class="list-group-item"><a href="/corp/en/news-landing-page/press-releases-articles.html">Press Releases &amp; Articles</a></li>
+			                        </ul>
+			                     </div>
+			                  </div>
+			               </div>
+			            </div>
+			         </div>
+			      </div>
+			      <div class="nav-container container">
+			         <!-- Main Navigation -->
+			         <div class="main-navigation" role="navigation">
+			            <ul class="nav nav-justified">
+			               <li class="dropdown" data-child=".child-1">
+			                  <a href="/corp/en/about.html" role="button">About Allegion</a>
+			               </li>
+			               <li class="dropdown" data-child=".child-2">
+			                  <a href="/corp/en/products.html" role="button">Products</a>
+			               </li>
+			               <li class="dropdown" data-child=".child-3">
+			                  <a href="/corp/en/brands.html" role="button">Brands</a>
+			               </li>
+			               <li class="dropdown" data-child=".child-4">
+			                  <a href="/corp/en/careers.html" role="button">Careers</a>
+			               </li>
+			               <li class="dropdown selected" data-child=".child-5">
+			                  <a href="/corp/en/investor-relations.html" role="button">Investor Relations</a>
+			               </li>
+			               <li class="dropdown" data-child=".child-6">
+			                  <a href="/corp/en/news-landing-page.html" role="button">Newsroom</a>
+			               </li>
+			            </ul>
+			         </div>
+			         <!--Children of main Navigation-->
+			         <div class="child-nav" role="navigation">
+			            <ul class="child-1 nav nav-justified" style="display: none;">
+			               <li>
+			                  <a href="/corp/en/about/our-story.html" role="button" aria-expanded="false">Our Story</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/about/corporate-governance.html" role="button" aria-expanded="false">Corporate Governance</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/about/leadership.html" role="button" aria-expanded="false">Leadership</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/about/expertise.html" role="button" aria-expanded="false">Expertise</a>
+			               </li>
+			            </ul>
+			            <ul class="child-2 nav nav-justified" style="display: none;">
+			               <li>
+			                  <a href="/corp/en/products/business.html" role="button" aria-expanded="false">For Business</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/products/home.html" role="button" aria-expanded="false">For Home</a>
+			               </li>
+			            </ul>
+			            <ul class="child-3 nav nav-justified" style="display: none;">
+			            </ul>
+			            <ul class="child-4 nav nav-justified" style="display: none;">
+			               <li>
+			                  <a href="/corp/en/careers/culture.html" role="button" aria-expanded="false">Our Culture</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/careers/people.html" role="button" aria-expanded="false">Our People</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/careers/university.html" role="button" aria-expanded="false">During and After University</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/careers/equal-opportunity.html" role="button" aria-expanded="false">Equal Opportunity Employer</a>
+			               </li>
+			            </ul>
+			            <ul class="child-5 nav nav-justified" style="display: none;">
+			            </ul>
+			            <ul class="child-6 nav nav-justified" style="display: none;">
+			               <li>
+			                  <a href="/corp/en/news-landing-page/media.html" role="button" aria-expanded="false">Media Resources</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/news-landing-page/social-media.html" role="button" aria-expanded="false">Social Media</a>
+			               </li>
+			               <li>
+			                  <a href="/corp/en/news-landing-page/press-releases-articles.html" role="button" aria-expanded="false">Press Releases &amp; Articles</a>
+			               </li>
+			            </ul>
+			         </div>
+			      </div>
+			   </div>
+			   <div class="parbase teaserCarousel">
+					 <!-- Hero image container in fixed header -->
+
+						<p style="font-size:32px;color:black;">Test Content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						</p>
+
+				 </div>
+			</div>
+
+			<!-- Body content -->
+
+			<p style="font-size:32px;color:black;">Test Content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+			</p>
+
+
+
+
+
+
+
+			<!-- Allegion Footer Template -->
+			<div class="footer">
+		    <div class="row-fluid footer-wrapper">
+		        <div class="col-md-7 col-sm-6 col-xs-12 footer-navigation">
+		            <ul class="row-fluid navigation">
+		                    <li class="navigation-item"><a href="/corp/en/footer/privacy-statement.html">Privacy Statement</a></li>
+		                    <li class="navigation-item"><a href="/corp/en/footer/cookies-policy.html">Cookies Policy</a></li>
+		                    <li class="navigation-item"><a href="/corp/en/footer/terms-of-use.html">Terms</a></li>
+		                    <li class="navigation-item"><a href="/corp/en/footer/sitemap.html">Site Map</a></li>
+		                <p class="copyright">© Allegion plc, 2015 | Block D, Iveagh Court, Harcourt Road, Dublin 2, Co. Dublin, Ireland
+		                    <br>REGISTERED IN IRELAND WITH LIMITED LIABILITY REGISTERED NUMBER 527370
+		                    <br>Allegion is an equal opportunity and affirmative action employer
+		                </p>
+		            </ul>
+		        </div>
+		        <div class="col-md-5 col-sm-5 col-xs-6 social-links pull-right">
+		            <div class="row-fluid text-center social">
+									<div class="col-md-1 col-sm-2 navigation-item pull-right">
+		               <a class="YouTube" href="https://www.youtube.com/channel/UCufDIevUmPZVZVByiKPF9Jw" target="_blank"><img title="IF_Icon_Web_YouTube_32x32px_grau" alt="IF_Icon_Web_YouTube_32x32px_grau" class="cq-dd-image" src="imgs/corp/icn-yt.png"></a>
+									</div>
+                  <div class="col-md-1 col-sm-2 navigation-item pull-right">
+                      <a class="LinkedIn" href="https://www.linkedin.com/company/3532968" target="_blank"><img title="IF_Icon_Web_LinkedIn_32x32px_grau" alt="IF_Icon_Web_LinkedIn_32x32px_grau" class="cq-dd-image" src="imgs/corp/icn-li.png"></a>
+                  </div>
+                  <div class="col-md-1 col-sm-2 navigation-item pull-right">
+                      <a class="Facebook" href="https://www.facebook.com/AllegionPlc/" target="_blank"><img title="IF_Icon_Web_Facebook_32x32px_grau" alt="IF_Icon_Web_Facebook_32x32px_grau" class="cq-dd-image" src="imgs/corp/icn-fb.png"></a>
+                  </div>
+                  <div class="col-md-1 col-sm-2 navigation-item pull-right">
+                      <a class="Google+" href="https://plus.google.com/b/109046678618564310723/+Allegion/posts" target="_blank"><img title="IF_Icon_Web_Google_32x32px_grau" alt="IF_Icon_Web_Google_32x32px_grau" class="cq-dd-image" src="imgs/corp/icn-googlePlus.png"></a>
+                  </div>
+                  <div class="col-md-1 col-sm-2 navigation-item pull-right">
+                      <a class="Twitter" href="https://twitter.com/AllegionPlc" target="_blank"><img title="IF_Icon_Web_Twitter_32x32px_grau" alt="IF_Icon_Web_Twitter_32x32px_grau" class="cq-dd-image" src="imgs/corp/icn-twitter.png"></a>
+                  </div>
+		                <div class="col-md-5 col-sm-6 navigation-item pull-right connectText">
+		                    <span style="">Connect with Allegion &nbsp;&nbsp;</span>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+
+		</div>
+	</body>
 </html>
