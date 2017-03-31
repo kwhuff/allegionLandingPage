@@ -23,6 +23,10 @@
 .linkBody{
   height: 200px;
 }
+.linkBody1{
+  height: 200px;
+  border-bottom: 1px solid black;
+}
 .logoArea{
   /*background-color: pink;*/
   width: 100%;
