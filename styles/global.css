@@ -1,0 +1,33 @@
+.headerImage{
+  height: 450px;
+  /*width: 100%;*/
+  max-width: 1200px;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+.anchorGroup{
+  margin-top: 30px;
+}
+.anchorBtn{
+  padding: 10px;
+  background-color: #ff5d00;
+  box-shadow: none;
+  color: white;
+  border: none;
+  font-size: 13px;
+  /*font-weight: bold;*/
+}
+.linkOutArea{
+  max-width: 1200px;
+}
+.linkBody{
+  height: 200px;
+}
+.logoArea{
+  background-color: pink;
+  width: 100%;
+  height: 100px;
+}
+.linkTitle{
+  color: #6d6d6d;
+}
