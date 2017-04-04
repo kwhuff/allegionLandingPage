@@ -22,6 +22,7 @@
 		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/static.css">
 		<link rel="stylesheet" type="text/css" href="styles/global.css">
 
@@ -30,8 +31,9 @@
 		<div id="cqcanvas">
 			<div id="vsscript_15268_730848">
 			</div>
-			<script src="global.js"></script>
 			<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script src="global.js"></script>
+
 	    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<!-- Allegion Header Template -->
@@ -345,13 +347,20 @@
 			</div>
 
 			<!-- Body content -->
-			<ul class='list-unstyled list-inline text-center anchorGroup'>
-				<li><button class='anchorBtn'>FROM OUR CEO</button></li>
-				<li><button class='anchorBtn'>5 GROWTH PILLARS</button></li>
-				<li><button class='anchorBtn'>FROM OUR EMPLOYEES</button></li>
-				<li><button class='anchorBtn'>MORE INFORMATION</button></li>
+			<ul class='list-unstyled list-inline text-center standard anchorGroup'>
+				<li><button id='ceoSection' class='anchorBtn'>FROM OUR CEO</button></li>
+				<li><button id='growthPillars' class='anchorBtn'>5 GROWTH PILLARS</button></li>
+				<li><button id='ourEmployees' class='anchorBtn'>FROM OUR EMPLOYEES</button></li>
+				<li><button id='moreInfo' class='anchorBtn'>MORE INFORMATION</button></li>
 			</ul>
-			<br /><br />
+
+			<!--Anchor Buttons mobile view -->
+			<div class='text-center mobileView'>
+				<button id='ceoSection' class='anchorBtn'>FROM OUR CEO</button><br />
+				<button id='growthPillars' class='anchorBtn'>5 GROWTH PILLARS</button><br />
+				<button id='ourEmployees' class='anchorBtn'>FROM OUR EMPLOYEES</button><br />
+				<button id='moreInfo' class='anchorBtn'>MORE INFORMATION</button><br />
+			</div>
 
 			<!-- From Our CEO Section -->
 			<div class='container-fluid'>
@@ -390,6 +399,118 @@
 			</div>
 			<br /><br />
 			<!-- End From Our CEO Section -->
+
+		<!--Begin 5 Growth Pillars -->
+		<div class='container-fluid'>
+				<div class='growthPillars'>
+					<div class='row'>
+						<div class='indPillar'>
+							<div class='col-sm-2 noPadding'>
+								<div class='imagePlaceholder'>
+								</div>
+							</div>
+							<div class='col-sm-10 pillarTextArea'>
+								<div class='row pillarContent' id='pillar1'>
+									<h2 class='pillarTextArea'>Opportunistic acquisitions</h2>
+									<p class='pillarText'>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div class='row'>
+								<button id='expandButton' class='expandButton'>click me to expand things</button>
+								<button id='collapseButton' class='collapseButton hidden'>click me to collapse things</button>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='indPillar'>
+							<div class='col-sm-2 noPadding'>
+								<div class='imagePlaceholder'>
+								</div>
+							</div>
+							<div class='col-sm-10 pillarTextArea'>
+								<div class='row pillarContent' id='pillar1'>
+								<h2 class='pillarTextArea'>Opportunistic acquisitions</h2>
+								<p class='pillarText'>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div class='row'>
+								<button id='expandButton' class='expandButton'>click me to expand things</button>
+								<button id='collapseButton' class='collapseButton hidden'>click me to collapse things</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='indPillar'>
+						<div class='col-sm-2 noPadding'>
+							<div class='imagePlaceholder'>
+							</div>
+						</div>
+						<div class='col-sm-10 pillarTextArea'>
+							<div class='row pillarContent' id='pillar1'>
+							<h2 class='pillarTextArea'>Opportunistic acquisitions</h2>
+							<p class='pillarText'>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+						<div class='row'>
+							<button id='expandButton' class='expandButton'>click me to expand things</button>
+							<button id='collapseButton' class='collapseButton hidden'>click me to collapse things</button>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class='row'>
+						<div class='indPillar'>
+							<div class='col-sm-2 noPadding'>
+								<div class='imagePlaceholder'>
+								</div>
+							</div>
+							<div class='col-sm-10 pillarTextArea'>
+								<div class='row pillarContent' id='pillar1'>
+								<h2 class='pillarTextArea'>Opportunistic acquisitions</h2>
+								<p class='pillarText'>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div class='row'>
+								<button id='expandButton' class='expandButton'>click me to expand things</button>
+								<button id='collapseButton' class='collapseButton hidden'>click me to collapse things</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='indPillar'>
+						<div class='col-sm-2 noPadding'>
+							<div class='imagePlaceholder'>
+							</div>
+						</div>
+						<div class='col-sm-10 pillarTextArea'>
+							<div class='row pillarContent' id='pillar1'>
+							<h2 class='pillarTextArea'>Opportunistic acquisitions</h2>
+							<p class='pillarText'>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+						<div class='row'>
+							<button id='expandButton' class='expandButton'>click me to expand things</button>
+							<button id='collapseButton' class='collapseButton hidden'>click me to collapse things</button>
+						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+		</div>
+		<!--End 5 Growth Pillars -->
+
+		<!--Begin From Our Employees Section -->
+		
+		<!--End From Our Employees Section -->
 
 			<!-- More Information Section -->
 			<div class='container linkOutArea'>
@@ -464,34 +585,12 @@
 						</div>
 					</div>
 					<div class='col-sm-8'>
-						<h2 class='linkTitle'>Videos highlighting 2016</h2><br />
-						<div class='col-sm-3 noPadLeft'>
-							<div id='video1'>
-
-							</div>
-							<p class='videoSubtext'>
-								Allegion by the Numbers
-							</p>
-						</div>
-						<div class='col-sm-3 noPad'>
-							<div id='video2'>
-
-							</div>
-							<p class='videoSubtext'>
-								Allegion Introduction
-							</p>
-						</div>
-						<div class='col-sm-3 noPad'>
-							<div id='video3'>
-								<p class='videoTime'>
-									Words
-								</p>
-							</div>
-							<p class='videoSubtext'>
-								Allegion: Employee Reflections
-							</p>
-						</div>
+						<h2 class='linkTitle'>Download the 2016 annual report</h2>
+						<p>
+							Need our annual report offline or on-the-go? Download a printer-friendly pdf.
+						</p>
 						<br />
+						<a href='http://investor.allegion.com/company-profile/sustainability' target='_blank'><button class='btn btn-default readMoreBtn'>DOWNLOAD</button></a>
 					</div>
 				</div>
 
