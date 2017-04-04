@@ -229,7 +229,7 @@ body{
   margin-top: 0.2em;
   /* bg color = bg color under block */
   background: white;
-  transition: 2s ease;
+  transition: 2s linear;
 }
 .pillarTextExpanded{
   max-height: 1800px;
@@ -244,8 +244,85 @@ body{
 .collapseButton{
   margin-left: 54px;
 }
-.redText{
-  color: red;
+.ourEmployeesCarousel{
+  /*height: 500px;*/
+  width: 100%;
+  margin: auto;
+  /*background-color: black;*/
+}
+.item{
+  height: 150px;
+  width: 85%;
+  margin: auto;
+}
+.quoteCard{
+  background-color: white;
+  border: 1px solid grey;
+  width: 75%;
+  margin: auto;
+  padding-top: 100px;
+  height: 260px;
+}
+.next{
+  padding-top: 100px;
+}
+.prev{
+  padding-top: 100px;
+}
+.carousel-control{
+  height: 25px;
+  background-color: transparent;
+  margin-top: 125px;
+  width: 25px;
+}
+.leftIndicator{
+  height: 50px;
+  background-color: transparent;
+  margin-top: 100px;
+  width: 50px;
+  margin-left: 8%;
+  font-size: 50px;
+}
+.rightIndicator{
+  height: 50px;
+  background-color: transparent;
+  margin-top: 100px;
+  width: 50px;
+  margin-right: 8%;
+  font-size: 50px;
+}
+.carousel-indicators{
+  margin: auto;
+  margin-top: 50px;
+  left: 50%;
+  right: 50%;
+  height: 15px;
+  opacity: .5;
+}
+.activeItem{
+  opacity: 1;
+  color: white;
+}
+#myCarousel{
+  margin-top: 25px;
+  /*background-color: blue;*/
+}
+.carouselSection{
+  background-color: pink;
+  height: 500px;
+}
+.ourEmployeesTitle{
+  margin-top: 60px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.employeeQuote{
+  margin-top: -25px;
+  font-weight: 300;
+}
+.orangeBold{
+  color: #ff5c00;
+  font-weight: bold;
 }
 
 
