@@ -54,13 +54,18 @@ body{
   border-radius: 0;
   border: 1px solid #CAD5DD;
   padding: 10px 25px 10px 25px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 3px;
   font-size: 13px;
+  width: 200px;
 }
-/*.linkLogo{
-  width: 100%;
-}*/
+#collapseButton{
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+}
+.readMoreBtn:focus{
+  background-color: white;
+}
 .videoPreview{
   width: 100%;
 }
@@ -177,8 +182,6 @@ body{
 }
 .indPillar{
   max-width: 80%;
-  /*background-color: #ff5d00;*/
-  /*border: 1px solid grey;*/
   height: 220px;
   margin: auto;
   margin-top: 20px;
@@ -187,7 +190,6 @@ body{
 .imagePlaceholder{
   height: 220px;
   width: 220px;
-  /*background-color: orange;*/
   padding: 0;
   margin: 0;
 }
@@ -203,8 +205,10 @@ body{
   margin-right: 30px;
 }
 .expandButton{
-  margin-left: 45px;
-  padding-left: 0;
+  /*padding-left: 0;*/
+  margin-left: 60px;
+  background-color: white;
+  text-align: center;
 }
 /* styles for '...' */
 .pillarText {
@@ -255,9 +259,6 @@ body{
   max-height: 1800px;
   transition: 4s ease;
 }
-.expandButton{
-  margin-left: 60px;
-}
 .hidden{
   display: none;
 }
@@ -273,6 +274,15 @@ body{
 .item{
   height: 150px;
   width: 100%;
+  /*margin-right: 7%;
+  margin-left: 7%;*/
+  margin: auto;
+}
+.videoItem{
+  padding-top: 30px;
+  height: 400px;
+  width: 400px;
+  /*width: 100%;*/
   /*margin-right: 7%;
   margin-left: 7%;*/
   margin: auto;
@@ -296,9 +306,28 @@ body{
   padding-top: 70px;
   height: 220px;
 }
+.videoCard{
+  width: 400px;
+  margin: auto;
+  height: 420px;
+}
+.modal{
+  margin-top: 120px;
+  overflow-y: auto;
+}
 .next{
   padding-top: 70px;
   /*margin-right: 85%;*/
+}
+.videoCard > .next{
+  padding-top: 30px;
+  height: 400px;
+  width: 400px;
+}
+.videoCard > .prev{
+  padding-top: 30px;
+  height: 400px;
+  width: 400px;
 }
 .prev{
   padding-top: 70px;
@@ -318,6 +347,14 @@ body{
   margin-left: 8%;
   font-size: 50px;
 }
+.leftVideoIndicator{
+  height: 50px;
+  background-color: transparent;
+  margin-top: 140px;
+  width: 50px;
+  margin-left: 25%;
+  font-size: 50px;
+}
 .rightIndicator{
   height: 50px;
   background-color: transparent;
@@ -326,13 +363,31 @@ body{
   margin-right: 8%;
   font-size: 50px;
 }
-.carousel-indicators{
+.rightVideoIndicator{
+  height: 50px;
+  background-color: transparent;
+  margin-top: 140px;
+  width: 50px;
+  margin-right: 25%;
+  font-size: 50px;
+}
+.indicatorsStyling{
   margin: auto;
-  margin-top: 50px;
+  margin-top: 0;
   left: 50%;
   right: 50%;
   height: 15px;
   opacity: .5;
+  position: sticky;
+}
+.videoIndicatorsStyling{
+  margin: auto;
+  margin-top: -105px;
+  left: 50%;
+  right: 50%;
+  height: 15px;
+  opacity: .5;
+  position: sticky;
 }
 .activeItem{
   opacity: 1;
@@ -387,6 +442,37 @@ body{
   font-weight: 300;
   margin-top: 0;
   padding-top: 0;
+}
+.carouselIndicators{
+  width: 60%;
+  /*position: inherit;*/
+}
+/*.carousel-indicators{
+  position: sticky;
+  margin-top: 0;
+}*/
+.indIndicator{
+  margin: 2px;
+  padding: 2px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: white;
+  opacity: .4;
+}
+.carousel-indicators .active{
+    margin: 2px;
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: white;
+}
+.active{
+  opacity: .9;
+}
+.buttonStyling{
+  text-align: center;
 }
 
 

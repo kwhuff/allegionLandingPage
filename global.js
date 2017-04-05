@@ -34,4 +34,33 @@ $('#readTheLetter').click(function(){
   var letterText = document.getElementsByClassName('panelCEO')
   $(letterText).toggleClass('expandedCEOLetter', 'panelCEO')
 })
+
+var vidPlayer = document.getElementsByClassName('youTubeVideo')
+var allModals = document.getElementsByClassName('modal')
+var modal1 = document.getElementById('myModal1')
+var modal2 = document.getElementById('myModal2')
+var modal3 = document.getElementById('myModal3')
+var body = document.body
+var modal1Clone = $(modal1).clone()
+var modal2Clone = $(modal2).clone()
+var modal3Clone = $(modal3).clone()
+var replacementClone = modal1Clone.clone()
+
+$(body).click(function(){
+  var modal1 = document.getElementById('myModal1')
+  var modal2 = document.getElementById('myModal2')
+  var modal3 = document.getElementById('myModal3')
+  var x1 = modal1Clone.clone()
+  var x2 = modal2Clone.clone()
+  var x3 = modal3Clone.clone()
+  if($(modal1).css('display') == 'block'){
+    $(modal1).replaceWith(x1)
+  }
+  else if($(modal2).css('display') == 'block'){
+    $(modal2).replaceWith(x2)
+  }
+  else if($(modal3).css('display') == 'block'){
+    $(modal3).replaceWith(x3)
+  }
+})
 })
