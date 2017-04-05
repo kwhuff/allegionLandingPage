@@ -2,6 +2,7 @@ var expandButton = document.getElementsByClassName('expandButton')
 var pillarText = document.getElementsByClassName('pillarText')
 var collapseButton = document.getElementsByClassName('collapseButton')
 
+
 $(document).ready(function() {
 
 $(expandButton).click(function(e){
@@ -27,5 +28,10 @@ $(collapseButton).click(function(e){
   $(finalText).removeClass('pillarTextExpanded')
   $(expandBtn).removeClass('hidden')
   $(e.target).addClass('hidden')
+})
+
+$('#readTheLetter').click(function(){
+  var letterText = document.getElementsByClassName('panelCEO')
+  $(letterText).toggleClass('expandedCEOLetter', 'panelCEO')
 })
 })
