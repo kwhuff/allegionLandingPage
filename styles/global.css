@@ -3,12 +3,30 @@ body{
 }
 .headerImage{
   height: 400px;
-  background-image: url('/../imgs/corp/headerImg.jpg');
+  background-image: url('../imgs/corp/headerImg.jpg');
+  /*background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;*/
   width: 100%;
   max-width: 1200px;
   background-color: white;
   border: 1px solid #f5f5f5;
   margin-top: 55px;
+}
+.headerMainText{
+  height: 225px;
+  float: right;
+  font-size: 200px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin-right: 8%;
+  margin-top: 80px;
+  line-height: 142px;
+}
+.headerSubText{
+  font-size: 65px;
+  letter-spacing: 3px;
+  margin-right: 5%;
 }
 .anchorGroup{
   margin-top: 25px;
@@ -115,7 +133,9 @@ body{
 }
 .fromOurSection{
   /*background-color: slategray;*/
-  background-image: url('/../imgs/corp/woodgrain.jpg');
+  background-image: url('../imgs/corp/woodgrain.jpg');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
   width: 100%;
   padding-bottom: 80px;
 }
@@ -170,12 +190,26 @@ body{
 }
 .letterText{
   background-color: white;
-  width: 1100px;
+  width: 1000px;
   margin-right: auto;
   margin-left: auto;
   margin-top: -15px;
   transition: 5s ease;
   overflow: hidden;
+  font-weight: 500;
+  height: 2000px;
+}
+.safetyOrange{
+  color: #fa5f00;
+  font-size: 18px;
+  font-weight: normal;
+}
+.grayText{
+  color: gray;
+}
+.letterFormat{
+  margin: 5%;
+  line-height: 25px;
 }
 .growthPillars{
   width: 100%;
@@ -200,6 +234,23 @@ body{
   padding-top: 0;
   margin-top: 0;
 }
+.pillarTitleStyling{
+  color: gray;
+  font-weight: 400;
+}
+.pillarPhoto{
+  width: 100%;
+}
+.point{
+  font-size: 7px;
+  height: 0px;
+  width: 7px;
+  color: #ff6400;
+  margin-right: 2px;
+  padding-bottom: 2px;
+  display: inline-block;
+  margin-left: 35px;
+}
 .pillarContent{
   margin-left: 45px;
   margin-right: 30px;
@@ -209,6 +260,8 @@ body{
   margin-left: 60px;
   background-color: white;
   text-align: center;
+  margin-top: 21px;
+  transition: 2s ease;
 }
 /* styles for '...' */
 .pillarText {
@@ -219,13 +272,14 @@ body{
   /* use this value to count block height */
   line-height: 1.5em;
   /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 7.5em;
+  max-height: 6em;
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;
   /* place for '...' */
   margin-right: -1em;
   padding-right: 1em;
   transition: 4s ease;
+  font-weight: 500;
 }
 
 /* create the ... */
@@ -261,6 +315,7 @@ body{
 }
 .hidden{
   display: none;
+  /*transition: 2s ease;*/
 }
 .collapseButton{
   margin-left: 54px;
@@ -287,16 +342,43 @@ body{
   margin-left: 7%;*/
   margin: auto;
 }
-.collapse{
-  /*transition: 5s ease;*/
-}
 .panelCEO{
   transition: 2s ease;
   max-height: 0px;
 }
 .expandedCEOLetter{
   transition: 2s ease;
-  max-height: 1000px;
+  max-height: 1850px;
+}
+.bulletPoints{
+  display: inline-block;
+  margin-left: 6%;
+}
+.letterCollapse{
+  background-color: #ff5d00;
+  color: white;
+  margin: 0 auto;
+  float: none;
+  /*width: 100px;*/
+  border-radius: 0;
+  border: 1px solid #CAD5DD;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 12px;
+  /*float: right;*/
+  /*background-color: transparent;*/
+  /*color: white;*/
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -19px;
+  display: inline !important;
+  /*transition: 2s ease;*/
+}
+.bulletPoints2{
+  display: block;
+  margin-left: 6%;
 }
 .quoteCard{
   background-color: white;
@@ -399,7 +481,8 @@ body{
 }
 .carouselSection{
   /*background-color: pink;*/
-  background-image: url('/../imgs/corp/woodgrain.jpg');
+  background-image: url('../imgs/corp/woodgrain.jpg');
+  background-size: cover;
   height: 500px;
 }
 .ourEmployeesTitle{
@@ -474,6 +557,16 @@ body{
 .buttonStyling{
   text-align: center;
 }
+.infoContent{
+  height: 143px;
+}
+.bottom0{
+  bottom: 0;
+  position: absolute;
+}
+.section218{
+  height: 218px;
+}
 
 
 @media(max-width: 660px){
@@ -489,5 +582,50 @@ body{
 @media(min-width: 661px){
   .mobileView{
     display: none;
+  }
+}
+@media(max-width: 1024px){
+  .headerMainText{
+    /*height: 225px;
+    float: right;
+    font-size: 200px;
+    color: white;
+    text-shadow: 1px 1px 2px black;*/
+    margin-right: -2%;
+    /*margin-top: 80px;
+    line-height: 142px;*/
+  }
+  /*.headerSubText{
+    font-size: 65px;
+    letter-spacing: 3px;
+    margin-right: 5%;
+  }*/
+  .ceoIntroText{
+    margin-left: 70px;
+  }
+  .pillarContent{
+    margin-left: 100px;
+  }
+  .expandButton{
+    margin-left: 115px;
+  }
+  .collapseButton{
+    margin-left: 115px;
+  }
+  .employeeQuote{
+    font-size: 28px;
+  }
+  .infoContent{
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+  .rightVideoIndicator{
+    margin-right: 20%;
+  }
+  .leftVideoIndicator{
+    margin-left: 20%;
+  }
+  .linkTitle{
+    font-size: 26px;
   }
 }
