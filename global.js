@@ -74,6 +74,7 @@ $('#readTheLetter').click(function(){
 $('#collapseLetterBtn').click(function(){
   $(letterText).toggleClass('expandedCEOLetter', 'panelCEO')
   $(collapseLetterButton).toggleClass('hidden')
+  $('#ceoScrollCatch').scrollView();
 })
 
 
