@@ -137,6 +137,7 @@ body{
   background-repeat: repeat-y;
   width: 100%;
   padding-bottom: 80px;
+  max-height: 3000px;
 }
 .photoContainer{
   height: 170px;
@@ -219,7 +220,7 @@ body{
   margin: 5%;
   line-height: 25px;
 }
-.growthPillars{
+.growthPillars1{
   width: 100%;
 }
 .indPillar{
@@ -261,12 +262,12 @@ body{
   margin-left: 35px;
 }
 .pillarContent{
-  margin-left: 45px;
+  margin-left: 8%;
   margin-right: 30px;
 }
 .expandButton{
   /*padding-left: 0;*/
-  margin-left: 60px;
+  margin-left: 9%;
   background-color: white;
   text-align: center;
   margin-top: 21px;
@@ -601,8 +602,8 @@ body{
   }
   .anchorBtn{
     width: 45%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 @media(min-width: 661px){
@@ -687,5 +688,136 @@ body{
 @media(max-width: 929px){
   .ceoIntroText{
     margin-left: 16%;
+  }
+}
+@media(max-width: 767px){
+  .photoContainer{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ceoIntroText{
+    text-align: center;
+    margin-left: 0;
+  }
+  .readLetterBtn{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  .mb-0{
+    text-align: center;
+  }
+  .infoBlock{
+    height: 475px;
+  }
+  .imagePlaceholder{
+    height: 100px;
+    width: 100px;
+    margin-right: 0;
+    float: left;
+  }
+  .pillarLogo{
+    height: 100%;
+    width: 100%;
+    display: inline;
+  }
+  .pillarTitleStyling{
+    font-size: 20px;
+  }
+  .pillarContent{
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+  .pillarText{
+    font-size: 10px;
+  }
+  .pillarTitleStyling{
+    display: none;
+  }
+  .pillarTextArea{
+    padding-left: 0;
+  }
+  .noPadding{
+    display: inline;
+    margin: 0;
+  }
+  .mobilePillarTitle{
+    word-wrap: normal;
+    /*padding: 10px;*/
+    margin-left: 10px;
+    margin-top: 0;
+    padding-right: 0;
+    /*font-size: 20px;*/
+  }
+  .expandButton{
+    margin: 0 auto;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .collapseButton{
+    margin: 0 auto;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .mobileOnlyParent{
+    height: 100px;
+  }
+  .titleContainer{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .employeeQuote{
+    font-size: 3vw;
+  }
+  .employeeName{
+    font-size: 3vw;
+  }
+  .nameQuoteSub{
+    font-size: 2vw;
+  }
+  .quoteImage{
+    height: 35px;
+    width: 35px;
+  }
+  .employeePhoto{
+    height: 100%;
+    width: 100%;
+  }
+  .quoteWrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+  .quoteCard{
+    height: 160px;
+  }
+  .item{
+    height: 150px;
+  }
+  .ourEmployeesTitle{
+    font-size: 5vw;
+  }
+  .rightIndicator{
+    margin-top: 18%;
+    margin-right: -9%;
+  }
+  .leftIndicator{
+    margin-top: 18%;
+    margin-left: -9%;
+  }
+}
+@media(min-width: 768px){
+  .mobilePillarTitle{
+    display: none;
+  }
+}
+@media(max-width: 374px){
+  .quoteWrapper{
+    width: 170px;
   }
 }

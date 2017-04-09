@@ -1,10 +1,10 @@
 var expandButton = document.getElementsByClassName('expandButton')
 var pillarText = document.getElementsByClassName('pillarText')
 var collapseButton = document.getElementsByClassName('collapseButton')
-var ceoSection = document.getElementById('ceoSection')
-var growthPillars = document.getElementById('growthPillars')
-var ourEmployees = document.getElementById('ourEmployees')
-var moreInfo = document.getElementById('moreInfo')
+// var ceoSection = document.getElementById('ceoSection')
+// var growthPillars = document.getElementById('growthPillars')
+// var ourEmployees = document.getElementById('ourEmployees')
+// var moreInfo = document.getElementById('moreInfo')
 var vids = ['6PsDyZQz5R8','20JZRw7xWas','WxDI252wTZI'];
 
 
@@ -21,19 +21,19 @@ $(document).ready(function() {
   }
 
 
-$('#ceoSection').click(function(event){
+$('.ceoSection').click(function(event){
   event.preventDefault();
   $('#ceoScrollCatch').scrollView();
 })
-$('#growthPillars').click(function(event){
+$('.growthPillars1').click(function(event){
   event.preventDefault();
   $('#pillarsScrollCatch').scrollView();
 })
-$('#ourEmployees').click(function(event){
+$('.ourEmployees').click(function(event){
   event.preventDefault();
   $('#employeesScrollCatch').scrollView();
 })
-$('#moreInfo').click(function(event){
+$('.moreInfo').click(function(event){
   event.preventDefault();
   $('#infoScrollCatch').scrollView();
 })
