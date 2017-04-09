@@ -412,6 +412,10 @@ body{
   margin-top: 120px;
   overflow-y: auto;
 }
+.vidImage{
+  /*height: 100%;*/
+  width: 100%;
+}
 .next{
   /*padding-top: 70px;*/
   /*margin-right: 85%;*/
@@ -810,9 +814,63 @@ body{
     margin-top: 18%;
     margin-left: -9%;
   }
+  .logoArea{
+    height: 80px;
+    width: 80px;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  .moreInfoLogo{
+    /*height: 100%;*/
+    width: 100%;
+  }
+  .infoContent{
+    margin-left: 20%;
+    height: 125px;
+
+  }
+  .linkTitle{
+    font-size: 17px;
+  }
+  .infoText{
+    font-size: 9.5px;
+  }
+  .bottom0{
+    display: none;
+  }
+  .videoCard{
+    width: 200px;
+    height: 210px;
+  }
+  .vidImage{
+    width: 200px;
+    height: 210px;
+    /*margin-left: 0;
+    margin-right: 0;*/
+  }
+  .carousel img{
+    margin-left: 0;
+  }
+  .videoIndicatorsStyling{
+    margin-top: -45px;
+  }
+  .leftVideoIndicator{
+    margin-top: 25%;
+    margin-left: -8%;
+  }
+  .rightVideoIndicator{
+    margin-top: 25%;
+    margin-right: -8%;
+  }
+  .carouselSection{
+    height: 365px;
+  }
 }
 @media(min-width: 768px){
   .mobilePillarTitle{
+    display: none;
+  }
+  .mobileMoreInfoButton{
     display: none;
   }
 }
