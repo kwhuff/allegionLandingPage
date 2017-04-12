@@ -1,25 +1,41 @@
 var expandButton = document.getElementsByClassName('expandButton')
 var pillarText = document.getElementsByClassName('pillarText')
 var collapseButton = document.getElementsByClassName('collapseButton')
-// var ceoSection = document.getElementById('ceoSection')
-// var growthPillars = document.getElementById('growthPillars')
-// var ourEmployees = document.getElementById('ourEmployees')
-// var moreInfo = document.getElementById('moreInfo')
 var vids = ['6PsDyZQz5R8','20JZRw7xWas','WxDI252wTZI'];
+var grayBackground = document.getElementsByClassName('bhhggf')
+var headerImage = document.getElementsByClassName('headerImage')
+// var allText = document.getElementsByClassName('.pillarText')
+// var newText = document.getElementById('#testy')
 
-
-
+function headerResizer(){
+  var pictureWidth = $(headerImage).width()
+  var newHeight = pictureWidth/3
+  $(grayBackground).height(newHeight + 56.072)
+  $(headerImage).height(newHeight)
+}
+$(window).on('resize', function(){
+  var pictureWidth = $(headerImage).width()
+  var newHeight = pictureWidth/3
+  $(grayBackground).height(newHeight + 56.072)
+  $(headerImage).height(newHeight)
+});
 
 $(document).ready(function() {
-
+  headerResizer()
   $.fn.scrollView = function () {
     return this.each(function () {
       $('html, body').animate({
-        scrollTop: ($(this).offset().top)-220
+        scrollTop: ($(this).offset().top)-250
       }, 1000);
     });
   }
-
+  $.fn.scrollView2 = function () {
+    return this.each(function () {
+      $('html, body').animate({
+        scrollTop: ($(this).offset().top)-250
+      }, 500);
+    });
+  }
 
 $('.ceoSection').click(function(event){
   event.preventDefault();
@@ -44,11 +60,13 @@ $(expandButton).click(function(e){
   var collapseBtn= collBtn[0]
   var test = $(e.target).parents('div.col-sm-10')
   var test2 = test[0].children[0]
-  var text = $(' > p.pillarText', test2)
+  var text = $(' > div.pillarText1', test2)
   var finalText = text[0]
-  $(finalText).addClass('pillarTextExpanded')
+  var finalTextHeight = $(finalText).height()
+  $(finalText).toggleClass('pillarTextExpanded', 'pillarText1')
   $(collapseBtn).removeClass('hidden')
   $(e.target).addClass('hidden')
+  var expandedHeight = $(finalText).siblings('pillarTextExpanded')
 })
 
 //Collapsing the 5 Pillars Section
@@ -57,25 +75,36 @@ $(collapseButton).click(function(e){
   var expandBtn= expBtn[0]
   var test = $(e.target).parents('div.col-sm-10')
   var test2 = test[0].children[0]
-  var text = $(' > p.pillarText', test2)
+  var text = $(' > div.pillarText1', test2)
   var finalText = text[0]
-  $(finalText).removeClass('pillarTextExpanded')
+  $(finalText).toggleClass('pillarTextExpanded', 'pillarText1')
   $(expandBtn).removeClass('hidden')
   $(e.target).addClass('hidden')
+  $(finalText).scrollView2();
 })
 
 //CEO Letter Expand
 var letterText = document.getElementsByClassName('panelCEO')
 var collapseLetterButton = document.getElementById('collapseLetterBtn')
 $('#readTheLetter').click(function(){
+  $('#readTheLetter').toggleClass('hidden')
+  $('#readLetterSwap').toggleClass('hidden')
   $(letterText).toggleClass('expandedCEOLetter', 'panelCEO')
   $(collapseLetterButton).toggleClass('hidden', 'letterCollapse')
 })
 $('#collapseLetterBtn').click(function(){
-  $(letterText).toggleClass('expandedCEOLetter', 'panelCEO')
-  $(collapseLetterButton).toggleClass('hidden')
+  closeLetter()
   $('#ceoScrollCatch').scrollView();
 })
+$('#readLetterSwap').click(function(){
+  closeLetter()
+})
+function closeLetter(){
+  $(letterText).toggleClass('expandedCEOLetter', 'panelCEO')
+  $(collapseLetterButton).toggleClass('hidden')
+  $('#readLetterSwap').toggleClass('hidden')
+  $('#readTheLetter').toggleClass('hidden')
+}
 
 
 // var body = document.body
@@ -105,22 +134,24 @@ $('#collapseLetterBtn').click(function(){
 
   $('.videoItem img').off().on('click',function(e){
     var t = e.target;
-    console.log($(t));
+    // console.log($(t));
     initVid($(t).attr('data-index'));
   });
 
 }); //end onDoc ready
-
 function initVid(i){
-  $('#vidModal .modal-body').empty().append('<iframe id="youTubeVideo" width="100%" height="400px" src="https://www.youtube.com/embed/'+vids[i]+'?rel=0" frameborder="0" allowfullscreen name="youTubeVideo"></iframe>');
- $('.container-fluid').on('click',function(){
+  $('#vidModal .modal-body').empty().append('<iframe id="youTubeVideo" src="https://www.youtube.com/embed/'+vids[i]+'?rel=0" frameborder="0" allowfullscreen name="youTubeVideo"></iframe>');
+ $(document.body).on('click',function(){
+   console.log('clicking on container')
    if($('#vidModal').css('display') == 'block'){
+     console.log('display is block')
     modalKill();
   }
   });
 }
 
 function modalKill(){
+  console.log('triggering')
   setTimeout(function(){$('#youTubeVideo').remove();}, 700)
   $('.container-fluid').off('click',modalKill);
   $('body').off();
