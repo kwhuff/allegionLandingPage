@@ -134,7 +134,6 @@ function closeLetter(){
 
   $('.videoItem img').off().on('click',function(e){
     var t = e.target;
-    // console.log($(t));
     initVid($(t).attr('data-index'));
   });
 
@@ -142,16 +141,13 @@ function closeLetter(){
 function initVid(i){
   $('#vidModal .modal-body').empty().append('<iframe id="youTubeVideo" src="https://www.youtube.com/embed/'+vids[i]+'?rel=0" frameborder="0" allowfullscreen name="youTubeVideo"></iframe>');
  $(document.body).on('click',function(){
-   console.log('clicking on container')
    if($('#vidModal').css('display') == 'block'){
-     console.log('display is block')
     modalKill();
   }
   });
 }
 
 function modalKill(){
-  console.log('triggering')
   setTimeout(function(){$('#youTubeVideo').remove();}, 700)
   $('.container-fluid').off('click',modalKill);
   $('body').off();
